@@ -1,0 +1,230 @@
+header img {
+    height: 3rem;
+    margin: 0.7rem 0.7rem 0.7rem 0.7rem;
+}
+
+#fotoUsuari {
+    border-radius: 50%;
+}
+
+#capcalera {
+    display: flex;
+    width: 100%;
+    background-color: #53A39A;
+
+    margin-top: 0px;
+
+    position: fixed;
+    z-index: 3; /* Perque sempre estigui a la part superior */
+   
+}
+
+#fotoTitol{
+    display: flex;
+    width: 100%;
+}
+
+
+
+#textBotiga{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#textBotiga h3{
+    text-align: center;
+    font-size: 100%;
+}
+
+
+#divLogo {
+    display: flex;
+    /*background-color: red;*/
+    margin: auto 0 auto 0;
+    width: fit-content;
+    justify-content: left;
+}
+
+#divLogo a {
+    display: flex;
+    /*background-color: red;*/
+    margin: auto 0 auto 0;
+    width: fit-content;
+    justify-content: left;
+}
+
+#divLogo img {
+    margin: 0.6rem 0.6rem 0.6rem 0.6rem;
+}
+
+#menu {
+    display: flex;
+    /*background-color: red;*/
+    margin: auto 0 auto auto;
+    width: fit-content;
+    justify-content: right;
+}
+
+#menu a {
+    display: flex;
+    /*background-color: red;*/
+    margin: auto 0 auto auto;
+    width: fit-content;
+    justify-content: right;
+}
+
+#menu img {
+    margin: 0.2rem 0.6rem 0.2rem 0.6rem;
+}
+
+
+img:hover {
+    cursor: pointer;
+}
+
+#menu_opcions{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#menu_opcions a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+
+.menu_desplegable {
+    display: none;
+    position: absolute;
+
+    background-color: #53A39A;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+
+}
+
+.menu_desplegable a{
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    text-decoration: none;
+}
+
+#menu_cabas{
+    margin-top: 3.8rem;
+    margin-right: 1.5rem;
+}
+
+.menu_item{
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+
+    padding: 0.5rem;
+
+    color:black;
+
+    margin-left: 0;
+}
+
+#cabas{
+    display: flex;
+}
+
+#cabasPle {
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+
+#desplegable {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#desplegable input{
+    height: 80%;
+}
+  
+
+/* -------------------------------------------PER MOBILS ----------------------------------------------------------------*/
+
+@media (width <= 420px)
+{
+    header img {
+        height: 3rem;
+        margin: 0.7rem 0.7rem 0.7rem 0.7rem;
+    }
+    
+    #capcalera {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #53A39A;
+    
+        margin-top: 0px;
+    
+        position: fixed;
+    }
+
+
+
+    #fotoTitol{
+        display: flex;
+        width: 100%;
+        /*background-color: red;*/
+    }
+
+    #textBotiga{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        
+    }
+    
+    #textBotiga h3{
+        text-align: center;
+        font-size: 100%;
+    }
+
+    #menu {
+        width: 100%;
+        display: flex;
+        /*background-color: blue;*/
+        margin: auto 0 auto auto;
+        /*width: fit-content;*/
+        justify-content: space-between;
+        align-content: center;
+        text-align: center;
+
+    }
+    
+}
+
+

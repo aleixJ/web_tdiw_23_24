@@ -1,0 +1,97 @@
+/*
+
+#000000
+#E7CEA7
+#0E1425
+#53A39A
+#2C5761
+#FD8730
+
+
+*/
+
+
+body{
+    display: contents;
+}
+
+html{
+    background-color: #FFFFFF;
+}
+
+
+#categories{
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+    
+
+    margin-top: 3rem;
+    padding-top: 5rem;
+
+    background-color: #FFFFFF;
+
+    
+}
+
+#categories div{
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 1rem 0.5rem 1rem 0.5rem;
+    border-radius: 1rem;
+}
+
+#categories div img{
+    width: 70%;
+    margin: auto auto 1rem auto;
+}
+
+
+.categoria{
+    background-color: #DFD2CC;
+    height: 1rem;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+#missatge-comanda{
+    text-align:center;
+    margin-top: 6rem;
+    font-size:30px;
+}
+
+
+@media (width <= 500px){
+    #categories{
+        flex-direction: column;
+    }
+
+    #categories div{
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        
+        margin: 1rem 0.5rem 1rem 0.5rem;
+        border-radius: 1rem;
+    }
+
+    #missatge-comanda{
+        text-align:center;
+        margin-top: 9rem;
+        font-size:30px;
+    }
+
+}

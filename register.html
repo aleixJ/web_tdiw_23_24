@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/capcalera.css">
+    <link rel="stylesheet" href="css/formularis.css">
+
+    <title>Botiga Sabates</title>
+</head>
+<body>
+
+    <!--Header-->
+    <div id="header"></div>
+
+    <div id="marco-register" class="form">
+
+        <section id="register-form">
+
+            <form method="POST" id="miFormulario" action="index.php?accio=1">
+                <h1>Registrar</h1>
+
+                <br>
+                <!--sense el name, el 'extract' no funciona-->
+                <input type="text" id="nom" name="username" pattern="^[A-Za-zàíèéòóúô\s]+$" placeholder="Nom" required  oninput="validarInput(this)" onchange="comprovarNom()"/> <br>
+                <input type="email" id="ce" name="email" pattern="[a-zA-Z0-9!#$%&'*\/=?^_`\{\|\}~\+\-]([\.]?[a-zA-Z0-9!#$%&'*\/=?^_`\{\|\}~\+\-])+@[a-zA-Z0-9]([^@&%$\/\(\)=?¿!\.,:;]|\d)+[a-zA-Z0-9][\.][a-zA-Z]{2,4}([\.][a-zA-Z]{2})?"  placeholder="Correu electrònic" oninput="validarInput(this)" required onchange="comprovarEmail(1)"/> <br>
+                <input type="password" id="contrasenya" name="contra" pattern="^[a-zA-Z0-9]*$" placeholder="Contrasenya" oninput="validarInput(this)" required /><br>
+                <input type="text" id="adreca" name="adreca" pattern="^[a-zA-Z0-9 çÇ]{1,30}$" placeholder="Adreça" oninput="validarInput(this)" required /><br>
+                <input type="text" id="poblacio" name="poblacio" pattern="^[a-zA-Z0-9 çÇ]{1,30}$" placeholder="Població" oninput="validarInput(this)" required /><br>
+                <input type="text" id="cp" name="cp" pattern="^\d{5}$" placeholder="Codi Postal" oninput="validarInput(this)" required /><br>
+
+                <input type="submit" value="Registrar-me"/>
+                
+            </form>
+            <span class="error-message" id="errorMiInput"></span>
+            <p id="compte">Ja tens compte? <a href="login.php">Inicia sessió</a></p>
+    
+        </section>  
+
+    </div>
+
+</body>
+</html>
+
+<head>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/botiga.js"></script>
+    <script src="js/header_footer.js"></script>
+</head>
+
+
+

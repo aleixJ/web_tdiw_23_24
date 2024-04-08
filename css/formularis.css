@@ -1,0 +1,64 @@
+body{
+    display: contents;
+}
+
+.error{
+    color: rgb(171, 42, 62);
+}
+
+body div.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /*background-color: aqua;*/
+}
+
+
+#login-form, #register-form{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    width: fit-content;
+
+    margin-top: 9rem;
+
+
+    border-radius: 1rem;
+}
+
+
+section p{
+    margin: 3rem auto 3rem auto;
+}
+
+
+input {
+    box-sizing: border-box;
+    width: 12rem;
+    height: 2rem;
+    margin: 5px;
+    padding: 5px;
+    border: solid 2px lightgrey;
+    border-radius: 10px;
+    outline: none;
+  }
+
+section input[pattern]:focus:invalid  {
+    border-color: red;
+}
+input[pattern]:focus:valid  {
+    border-color: blue;
+}
+
+input[type="submit"]:hover{
+    background-color: #c6c6c6;
+    cursor: pointer;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+}

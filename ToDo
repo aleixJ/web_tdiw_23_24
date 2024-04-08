@@ -1,0 +1,113 @@
+# Rubrica Correcció Parcial
+
+## Sistema de productes
+- [X] Llistat de categories (0.2)
+- [X] Llistat de productes amb Fetch (0.5)  
+- [X] Detall de producte amb Fetch (0.4)
+
+## Sistema d'usuaris
+- [X] Registre: consultes parametritzades (0.6)
+- [X] Registre: desar contrasenya xifrada (0.3)
+- [X] El meu compte: menú amb Javascript (0.2) (crec que es que al donar-li click a la imatge de la personeta es desplegui un menu on posi alguna cosa)
+
+## General
+- [X] MVC (0.8)
+-----------------------
+Total           3 
+
+
+
+
+# Rubrica Correcció Final
+## Sistema de productes
+- [ ] Llistat de categories: filtratge de dades (0.2)
+- [ X ] Cercador (0.2)
+
+## Sistema d'usuaris
+- [ ] Registre: validació a la part de client (0.3)
+- [ ] Registre: validació a la part de servidor (0.3)
+- [ X ] Inici de sessió (0.2)
+- [ X ] El meu compte: edició del perfil amb imatge (0.4)
+- [ X ] El meu compte: llistat de comandes (0.2)
+## Cabàs de compra
+- [ X ] Cabàs visible a tot el web (amb preu i quantitat total) (0.3) 
+- [ ] Afegir productes al cabàs escollint quantitat (0.3)
+- [ X ] Pàgina del cabàs (0.3)
+- [ X ] Buidar el cabàs (0.2)
+- [ X ] Modificar productes del cabàs (0.4)
+- [ X ] Eliminar productes del cabàs (0.2)
+## Procès de compra
+- [ X ] Pàgina de confirmació de la compra (0.2)
+- [ X ] Desar compra a la base de dades (0.5)
+- [ ] Resum de la compra.
+## General
+- [ ] Qualitat del codi (0.5)
+- [ ] UX + UI (0.5)
+---------------------------------------------------
+Total           5.5
+
+
+
+# To Do List Project
+- [ X ] Fer esquema BD
+- [ X ] Introduir Taules al servidor amb les seves columnes
+- [ X ] Emplenar la taula de Categories
+- [ X ] Emplenar la taula de Productes
+- [ X ] Fer que onload() es carregui de la BD les categories 
+- [ X ] Fer que es carreguin els productes asincronament
+- [ ] Estilar pagina principal
+- [ ] Estilar header per fer responsive
+- [ X ] Fer que el usuari pugui pujar foto de perfil i es mostrin. Si es molt complicat que pogui triar entre unes quantes
+- [ ] Fer que les cookies es guardin a la base de dades per tenir el cabas sincronitzat entre totes les aplicacions
+
+
+# Aleix
+- [ X ] Tornar a comprovar abans de fer el checkout que el productes siguin suficients 
+- [ X ] Fer el checkout, inserint les comandes a la base de dades
+- [ X ] Restar els productes comprats a la base de dades
+- [ X ] Fer la pagina per consultar les comandes anteriors
+
+
+# Gerard
+
+- [ X ] Crear la taula Contnguts que tingui com a columnes: nom_categoria, path_imatge, numero_grid
+- [ X ] Cercador
+- [ X ] Posar preu final al cabas i al menu_cabas
+
+- [ X ] El meu compte: edició del perfil amb imatge (0.4)
+- [ X ] Treure favoritos
+- [ X ] Arreglar busqueda, que es pugui fer una cerca normal desde qualsevol lloc de la web
+- [ X ] Que si al buscador poso home, tambe es llistin els productes de home
+- [ X ] Posar que es puguin comprar mes de 1 element a la hora d'afegir-ho al cabas
+- [ X ] Si hi ha 0 existencies que surti un error tipus POP UP d'error quan es vulgui comprar o que directament surti en un altre color amb el ratoli del tipus prohibit
+- [ X ] Que al fer-li click al comprar surti un avis de que s'esta carregant i que no se li pugui clickar un altre cop (cursor progress o wait)
+- [ X ] Que a la confirmació de la compra siguin 10s de redireccio i posar petit resum tipus comanda.
+- [ X ] Incloure la data al llistat de comandes (O)
+- [ X ] Estilar menus del header i que que no es puguin sobreposar
+- [ X ] Fer header responsive
+- [ X ] Estilar buscador
+- [ X ] Estilar imatges pagina principal
+- [ X ] Estilar pagina principal mobils
+- [ X ] Animacio de: afegit a la cistella
+- [ X ] Fer que si no hi ha color seleccionat, donar-li a "Afegir a la cistella" estigui prohibit
+- [ X ] Retocar pagina de perfil
+- [ X ] Fer que a opcions hagis de posar la actual contrasenya per poder canviar la contrasenya (notificar d'error en cas de que no s'hagi pogut canviar)
+- [ X ] Que accio 8 retorni algo
+- [ X ] Estilar llistar productes mobils
+- [ X ] Estilar botons carroussel
+- [ X ] Posar limits a formularis tant de registre com de actualitzacio
+- [ X ] Comprovacions tant de client com de servidor, formularis
+- [ X ] Fer que em respongui alguna cosa quan s'ha actualitzat la contrasenya
+- [ X ] Centrar boto Comprar Cabas
+- [ X ] Compra.php adaptar per mobils (nomes posar margin top adecuat)
+- [ X ] Pendent css compra.php
+- [ X ] Si puc fer una altre accio per editar dades i editar contra
+- [ X ] Eliminar del ordinador la antiga foto de perfil
+- [ ] Ordenar el codi JS
+- [ X ] Estilar el que veigi
+- [ ] Posar autoavaluacio
+- [ ] Deixar la BD neta
+
+
+
+

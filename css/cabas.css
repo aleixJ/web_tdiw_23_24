@@ -1,0 +1,157 @@
+
+/* Estilo para el contenedor de la cesta */
+.cabas {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7rem;
+  }
+  
+  .producte {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: repeat(6, auto);
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para los detalles del producto */
+  .cabas-nom,
+  .cabas-marca,
+  .cabas-color,
+  .cabas-talla,
+  .cabas-preu {
+    grid-column: 2;
+  }
+  
+  .cabas-nom { grid-row: 1; }
+  .cabas-marca { grid-row: 2; }
+  .cabas-color { grid-row: 3; }
+  .cabas-talla { grid-row: 4; }
+  .cabas-preu { grid-row: 5; }
+  
+  /* Estilo para la imagen del producto */
+  .cabas-foto {
+    width: 100px;
+    height: 100px;
+    grid-row: span 6;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  /* Estilo para los botones de cantidad de producto */
+  .quantitat-producte {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .button-eliminar-producte,
+  .button-afegir-producte,
+  .button-eliminar-productes {
+    background-color: #f0f0f0;
+    border: none;
+    color: black;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  /* Estilo para el botón de eliminar producto */
+  .eliminar-producte {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  /* Estilo para el precio final */
+  .preu-final {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  /* Estilo para el botón de comprar */
+
+  
+
+
+#compra{
+    width: 12rem;
+}
+
+.button-6 {
+
+    background-color: rgb(247, 240, 210);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+    /*display: inline-flex;*/
+    font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+
+    line-height: 1.25;
+    /*margin: 0;*/
+
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    /*position: relative;*/
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+
+    width: auto;
+    height: max-content;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+
+
+    /*margin-right: 1rem;*/
+    margin-top: 1rem;
+}
+
+.button-6:hover,
+.button-6:focus {
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.button-6:hover {
+    transform: translateY(-1px);
+}
+
+.button-6:active {
+    background-color: #F0F0F1;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    color: rgba(0, 0, 0, 0.65);
+    transform: translateY(0);
+}
+
+#boto-compra{
+    text-decoration:none;
+    color: black;
+}
+
+html.waiting {
+    cursor: wait;
+}
+

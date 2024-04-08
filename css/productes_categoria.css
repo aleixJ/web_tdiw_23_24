@@ -1,0 +1,85 @@
+
+#productes{
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+    
+
+    background-color: #FFFFFF;
+
+    max-width: 100%;
+
+
+
+}
+
+
+#productes .producte {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#productes .producte .descripcio img {
+    max-width: 30rem;
+    height: auto;
+    margin: 2rem;
+    /* crop la imatge per treure els marges superios i inferiors */
+    margin-top: 0.5rem;
+    
+}
+
+
+.producte{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.descripcio {
+    position: initial;
+    display: initial;
+    text-align: left;
+}
+
+.descripcio .marca{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    margin-top: -1rem
+}
+
+.descripcio .nom{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 2rem;
+    margin-top: -1rem;
+}
+
+.descripcio .preu{
+    margin-left: 2rem;
+    margin-top: 0;
+}
+
+
+
+
+
+@media (width <= 600px)
+{
+    #productes .producte {
+        width: 100%;
+    }
+
+    #productes .producte .descripcio img {
+        width: 100%;
+        height: auto;
+    }
+}

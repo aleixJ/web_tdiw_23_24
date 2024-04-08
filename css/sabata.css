@@ -1,0 +1,378 @@
+#descripcioProducte {
+    display: none;
+    grid-template-columns: 2fr 3fr 2fr;
+    /* 3 columnas: izquierda, centro, derecha */
+    height: 50vh;
+    /*Toma toda la altura de la pantalla */
+    margin-top: -4.5rem;
+
+}
+
+
+
+#carousel {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#carousel #fotos {
+    display: flex;
+    max-width: 37rem;
+    height: 100%;
+}
+
+
+#prev-next {
+    display: flex;
+    position: absolute;
+    width: 25%;
+    /* height: 2rem; */
+    /*background-color: aquamarine;*/
+    justify-content: space-between;
+}
+
+#carousel button
+{
+    /*position: absolute;*/
+    text-align: center;
+    appearance: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    /* border: none; */
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+/*
+#carousel .prev
+{
+    margin-right: 25rem;
+}
+
+#carousel .next
+{
+    margin-left: 25rem;
+}*/
+
+#fotos-container
+{
+    overflow: hidden;
+}
+
+#fotos-container #fotos
+{
+    transition: all 0.35s ease;
+}
+
+
+#carousel #fotos img {
+    max-width: 37rem;
+}
+
+#fotos img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+#descripcio {
+
+    padding: 1rem;
+}
+
+#descripcio #marcaNom {
+    margin-top: -0.5rem;
+}
+
+
+#gestio {
+
+    padding: 5px;
+}
+
+#gestio #preu {
+    display: flex;
+
+    height: 50%;
+    width: 100%;
+    justify-content: right;
+}
+
+#gestio #preu p {
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 1rem;
+    font-weight: 600;
+}
+
+#gestio #carrito {
+    display: flex;
+
+    height: 50%;
+    width: 100%;
+    justify-content: right;
+}
+
+
+.button-6 {
+
+    /*background-color: rgb(247, 240, 210);*/
+    background-color: rgb(184, 178, 156);
+    
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+    /*display: inline-flex;*/
+    font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+
+    line-height: 1.25;
+    /*margin: 0;*/
+
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    /*position: relative;*/
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+
+    width: auto;
+    height: max-content;
+
+
+    margin-right: 1rem;
+    margin-top: 50%;
+}
+
+.button-6:hover,
+.button-6:focus {
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: rgba(0, 0, 0, 0.65);
+    cursor: not-allowed;
+}
+
+.button-6:hover {
+    transform: translateY(-1px);
+}
+
+.button-6:active {
+    background-color: #F0F0F1;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    color: rgba(0, 0, 0, 0.65);
+    transform: translateY(0);
+}
+
+
+
+/* -------------------------------------------PER MOBILS ----------------------------------------------------------------*/
+
+
+
+
+
+@media (width <=840px) {
+
+    #descripcioProducte {
+        display: none;
+        grid-template-columns: 3fr;
+        /* 3 columnas: izquierda, centro, derecha */
+        /*height: 50vh; /*Toma toda la altura de la pantalla */
+        margin-top: -1.5rem;
+
+    }
+
+    #prev-next {
+        width: 80%;
+    }
+
+    #descripcio {
+        padding: 1rem;
+    }
+
+    #descripcio #marcaNom {
+        margin-top: -0.5rem;
+    }
+
+    #gestio {
+        display: flex;
+        padding: 5px;
+    }
+
+    #gestio #preu {
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 50%;
+
+    }
+
+    #gestio #preu p {
+        font-size: 22px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+
+    }
+
+    #gestio #carrito {
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 50%;
+
+        /*justify-content: right;*/
+    }
+
+
+    .button-6 {
+
+        background-color: rgb(247, 240, 210);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: .25rem;
+        box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+        box-sizing: border-box;
+        color: rgba(0, 0, 0, 0.85);
+        cursor: pointer;
+        /*display: inline-flex;*/
+        font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+
+        line-height: 1.25;
+        /*margin: 0;*/
+
+        /*padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  /*position: relative;*/
+        text-decoration: none;
+        /*transition: all 250ms;*/
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        /*vertical-align: baseline;*/
+
+        height: max-content;
+
+        margin-top: 0;
+
+
+    }
+
+
+}
+
+#botoIniciCompra{
+    cursor: pointer;
+    background-color: rgb(247, 240, 210);
+}
+
+
+
+
+
+
+
+
+
+@media ((width > 840px) and (width <=940px)) {
+
+    #descripcioProducte {
+        display: none;
+        grid-template-columns: 2fr 1fr;
+        /* 3 columnas: izquierda, centro, derecha */
+        /*height: 50vh; /*Toma toda la altura de la pantalla */
+        margin-top: -1.5rem;
+
+    }
+
+    #prev-next {
+        width: 55%;
+    }
+
+    #descripcio {
+        padding: 1rem;
+    }
+
+    #descripcio #marcaNom {
+        margin-top: -0.5rem;
+    }
+
+
+    #gestio {
+        display: flex;
+        padding: 5px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #gestio #preu {
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 50%;
+
+    }
+
+    #gestio #preu p {
+        font-size: 22px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+
+    }
+
+    #gestio #carrito {
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 50%;
+
+        /*justify-content: right;*/
+    }
+
+
+    .button-6 {
+
+        background-color: rgb(247, 240, 210);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: .25rem;
+        box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+        box-sizing: border-box;
+        color: rgba(0, 0, 0, 0.85);
+        cursor: pointer;
+        /*display: inline-flex;*/
+        font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+
+        line-height: 1.25;
+        /*margin: 0;*/
+
+        /*padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+      /*position: relative;*/
+        text-decoration: none;
+        /*transition: all 250ms;*/
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        /*vertical-align: baseline;*/
+
+        height: max-content;
+
+        margin-top: 0;
+
+
+    }
+
+
+}

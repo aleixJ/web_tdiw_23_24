@@ -1,0 +1,86 @@
+
+/* Estil pel div de totes les comandes */
+#comandes {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7rem;
+}
+
+/* Estil per cada comanda */
+.comanda {
+  width: 80%;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Estil per cada producte */
+.producte {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+
+/* Estil pels detalls del producte */
+.producte-nom,
+.producte-marca,
+.producte-color,
+.producte-talla,
+.producte-preu,
+.producte-unitats {
+  flex-basis: 15%;
+  text-align: left;
+}
+
+/* Estil per la imatge del producte */
+.producte-foto {
+  width: 50px;
+  height: 50px;
+  object-fit: cover; /*Per la relació d'aspecte*/
+  object-position: center;
+}
+
+.preu-i-data{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.data-comanda{
+  display: flex;
+  text-align: right;
+}
+
+
+  
+/* Estil quan la resolució del width de la pantalla es inferior a 600px */
+@media (max-width: 600px) {
+    .producte {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr) auto;
+      grid-template-rows: repeat(2, auto);
+    }
+  
+    .producte-nom,
+    .producte-marca,
+    .producte-color {
+      grid-row: 1;
+    }
+  
+    .producte-talla,
+    .producte-preu,
+    .producte-unitats {
+      grid-row: 2;
+    }
+  
+    .producte-foto {
+      grid-row: span 2;
+      align-self: center;
+    }
+  }
